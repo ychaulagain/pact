@@ -1,0 +1,33 @@
+plugins {
+    id 'org.springframework.boot' version '3.3.1'
+    id 'io.spring.dependency-management' version '1.1.0'
+    id 'java'
+    id 'au.com.dius.pact' version '4.4.3'
+}
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '21'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'au.com.dius.pact.consumer:junit5:4.6.2'
+    testImplementation 'au.com.dius.pact.provider:junit5:4.6.2'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+pact {
+    publish {
+        pactDirectory = project.layout.buildDirectory.dir('pacts').get().asFile.absolutePath
+    }
+}
+

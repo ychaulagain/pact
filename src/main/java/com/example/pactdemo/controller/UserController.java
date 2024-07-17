@@ -1,5 +1,7 @@
-package com.example.pactdemo;
+package com.example.pactdemo.controller;
 
+import com.example.pactdemo.model.User;
+import com.example.pactdemo.service.UserService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;

@@ -1,4 +1,4 @@
-package com.example.pactdemo;
+package com.example.pactdemo.model;
 
 public class User {
     private Long id;

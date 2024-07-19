@@ -1,5 +1,6 @@
-package com.example.pactdemo;
+package com.example.pactdemo.service;
 
+import com.example.pactdemo.model.User;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 

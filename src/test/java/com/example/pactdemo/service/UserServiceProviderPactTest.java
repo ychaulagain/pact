@@ -1,4 +1,4 @@
-package com.example.pactdemo;
+package com.example.pactdemo.service;
 
 import au.com.dius.pact.provider.junit5.HttpTestTarget;
 import au.com.dius.pact.provider.junit5.PactVerificationContext;
